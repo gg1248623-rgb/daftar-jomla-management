@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: daftar-jomla-management
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: "5000"
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        value: mongodb+srv://daftar-jomla:DaffarJomla2026@cluster0.mongodb.net/daftar-jomla?retryWrites=true&w=majority
+      - key: VERIFY_TOKEN
+        value: daftar-jomla-2026
+      - key: PHONE_NUMBER_ID
+        value: "1330121873518229"
+      - key: WHATSAPP_TOKEN
+        sync: false
+      - key: APP_NAME
+        value: دفتر الجملة
+      - key: CUSTOMER_PHONE
+        value: "0557699144"
